@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <!-- This module was also published with a richer model, Gradle metadata,  -->
+  <!-- which should be used instead. Do not delete the following line which  -->
+  <!-- is to indicate to Gradle or any Gradle module metadata file consumer  -->
+  <!-- that they should prefer consuming it instead. -->
+  <!-- do_not_remove: published-with-gradle-metadata -->
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>io.github.bantonsson</groupId>
+  <artifactId>remote-config-wasm-aot</artifactId>
+  <version>0.1.0+b4106c4</version>
+  <name>Datadog remote-config WASM reactor, AOT-compiled for the JVM</name>
+  <description>The libdatadog remote-config WASM PoC reactor, AOT-compiled to JVM machine classes with Endive and shipped with its Java host library. Prebuilt so consumers do not need the wasm toolchain (see the artifact's remote-config-aot.json provenance record).</description>
+  <licenses>
+    <license>
+      <name>Apache-2.0</name>
+      <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+    </license>
+  </licenses>
+  <properties>
+    <libdatadog.revision>b4106c48a4dd1e163223c9a45fa152e9e3a8c4ea</libdatadog.revision>
+    <wasm.opt.version>wasm-opt version 133</wasm.opt.version>
+    <wasm.java.sha256>c4d8f81d517baadad1e83dccfbb7c2b0bcae34255819b01da63af4349229fb6a</wasm.java.sha256>
+    <endive.cli.version>1.2.0</endive.cli.version>
+  </properties>
+  <dependencies>
+    <dependency>
+      <groupId>org.json</groupId>
+      <artifactId>json</artifactId>
+      <version>20250517</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>run.endive</groupId>
+      <artifactId>runtime</artifactId>
+      <version>1.2.0</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>run.endive</groupId>
+      <artifactId>wasi</artifactId>
+      <version>1.2.0</version>
+      <scope>runtime</scope>
+    </dependency>
+  </dependencies>
+</project>

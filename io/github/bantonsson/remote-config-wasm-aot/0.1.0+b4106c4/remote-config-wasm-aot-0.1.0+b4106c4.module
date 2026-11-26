@@ -1,0 +1,92 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "io.github.bantonsson",
+    "module": "remote-config-wasm-aot",
+    "version": "0.1.0+b4106c4",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.8.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.json",
+          "module": "json",
+          "version": {
+            "requires": "20250517"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "remote-config-wasm-aot-0.1.0+b4106c4.jar",
+          "url": "remote-config-wasm-aot-0.1.0+b4106c4.jar",
+          "size": 665629,
+          "sha512": "9d672a7e0e063f6180fef316834d3f434872141a14ac69a85dc1e125ceeaf14168fc9d78d55dfa0a12d2e3477c22b63abf6a19ddb8a53c795240b8d5acf2b7a5",
+          "sha256": "5abe570b4adfa53182e0720ec510f7b9d20d0310af622f050615116efcd9fd91",
+          "sha1": "33f8df338c6c93f6c80d918ef2e10c53ff520ceb",
+          "md5": "d645b35cfc4083a3476bc8f7fb38790b"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "run.endive",
+          "module": "runtime",
+          "version": {
+            "requires": "1.2.0"
+          }
+        },
+        {
+          "group": "run.endive",
+          "module": "wasi",
+          "version": {
+            "requires": "1.2.0"
+          }
+        },
+        {
+          "group": "org.json",
+          "module": "json",
+          "version": {
+            "requires": "20250517"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "remote-config-wasm-aot-0.1.0+b4106c4.jar",
+          "url": "remote-config-wasm-aot-0.1.0+b4106c4.jar",
+          "size": 665629,
+          "sha512": "9d672a7e0e063f6180fef316834d3f434872141a14ac69a85dc1e125ceeaf14168fc9d78d55dfa0a12d2e3477c22b63abf6a19ddb8a53c795240b8d5acf2b7a5",
+          "sha256": "5abe570b4adfa53182e0720ec510f7b9d20d0310af622f050615116efcd9fd91",
+          "sha1": "33f8df338c6c93f6c80d918ef2e10c53ff520ceb",
+          "md5": "d645b35cfc4083a3476bc8f7fb38790b"
+        }
+      ]
+    }
+  ]
+}
